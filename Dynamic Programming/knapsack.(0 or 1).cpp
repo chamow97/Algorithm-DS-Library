@@ -24,7 +24,28 @@ int main()
 			}
 		}
 	}
-	cout<<dp[n][totalWeight];
+	cout<<"\n\tTotal Value of selected items : "<<dp[n][totalWeight];
+	i=n;
+	j=totalWeight;
+	cout<<"\n\tThe weight and its value selected : (format:weight(value)) : ";
+	while(1)
+    {
+        if(dp[i][j]==dp[i-1][j])
+        {
+            i-=1;
+        }
+        else
+        {
+            cout<<weight[i]<<"("<<cost[i]<<")"<<" ";
+            j-=weight[i];
+            i-=1;
+        }
+        if(i==0 && j==0)
+        {
+            break;
+        }
+    }
+
     }
 
 
