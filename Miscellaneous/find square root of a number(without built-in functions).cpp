@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-float squareRoot(int x, float precision)
+float squareRoot(long long x, float precision)
 {
     float low = 0.0, high = x*1.0, mid;
     mid = (low+high)/2;
@@ -22,9 +22,10 @@ float squareRoot(int x, float precision)
 int main()
 {
     float answer = 0.0;
-    float precision = 0.000001;
-    int x;
-    cin>>x;
-    answer = squareRoot(x, precision);
-    cout<<answer;
+    float precision = 0.01;
+    long long x,i;
+    for(i=0;i<=100000;i++)
+    {answer = squareRoot(i, precision);
+    cout<<i<<" "<<answer<<endl;
+    }
 }
