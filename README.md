@@ -62,6 +62,7 @@
 <ol>
 	<li><a href="/Data Structures/segment tree.cpp">Segment Tree</a></li>
 	<li><a href="/Data Structures/trie.cpp">Trie Data Structures</a></li>
+	<li><a href="/Data Structures/Segment Tree with lazy propagation.cpp">Segment Tree with lazy propagation</a></li>
 </ol>
 </body>
 </html>

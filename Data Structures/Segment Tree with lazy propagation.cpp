@@ -59,16 +59,20 @@ void constructTree(ll a, ll b, ll position)
         ll mid = (a + b)/2;
         constructTree(a, mid, (2*position)+1);
         constructTree(mid+1, b, (2*position)+2);
-        segmentTree[position] = max(segmentTree[(2*position)+1], segmentTree[(2*position)+2]);
+        segmentTree[position] = segmentTree[(2*position)+1] + segmentTree[(2*position)+2];
     }
 }
 
 void updateTree(ll position, ll a, ll b, ll i, ll j, ll value)
 {
     //if the ith node is to be updated
-    if(lazyTree[i] != 0)
+    if(a > b)
     {
-        segmentTree[position] += lazyTree[position];
+        return;
+    }
+    if(lazyTree[position] != 0)
+    {
+        segmentTree[position] += (lazyTree[position]*(b-a+1));
         if(a != b)
         {
             lazyTree[(position*2)+1] += lazyTree[position];
@@ -82,7 +86,7 @@ void updateTree(ll position, ll a, ll b, ll i, ll j, ll value)
     }
     if(a >= i && b <= j)
     {
-        segmentTree[position] += value;
+        segmentTree[position] += (value*(b-a+1));
         if(a != b)
         {
             lazyTree[(position*2)+1] += value;
@@ -93,18 +97,18 @@ void updateTree(ll position, ll a, ll b, ll i, ll j, ll value)
     ll mid = (a+b)/2;
     updateTree((position*2)+1, a, mid, i, j, value);
     updateTree((position*2)+2, mid+1, b, i, j, value);
-    segmentTree[position] = max(segmentTree[(position*2)+1], segmentTree[(position*2)+2]);
+    segmentTree[position] = segmentTree[(position*2)+1] + segmentTree[(position*2)+2];
 }
 
 ll queryTree(ll position, ll a, ll b, ll i, ll j)
 {
     if(a > b || b < i || a > j)
     {
-        return -INF;
+        return 0;
     }
     if(lazyTree[position] != 0)
     {
-        segmentTree[position] += lazyTree[position];
+        segmentTree[position] += (lazyTree[position]*(b-a+1));
         if(a != b)
         {
             lazyTree[(2*position)+1] += lazyTree[position];
@@ -118,10 +122,7 @@ ll queryTree(ll position, ll a, ll b, ll i, ll j)
         return segmentTree[position];
     }
     ll mid = (a+b)/2;
-    ll q1 = queryTree((2*position)+1, a, mid, i, j);
-    ll q2 = queryTree((2*position)+2, mid+1, b, i, j);
-    ll ans = max(q1, q2);
-    return ans;
+    return queryTree((2*position)+1, a, mid, i, j) + queryTree((2*position)+2, mid+1, b, i, j);
 }
 
 /*-------------------------------------------------------- */
@@ -134,6 +135,6 @@ int main()
     updateTree(0, 0, n-1, 0, 6, 50);
     updateTree(0, 0, n-1, 7, 10, 100);
     updateTree(0, 0, n-1, 11, n-1, -200);
-    cout<<queryTree(0, 0, n-1, 0, n-1);
+    cout<<queryTree(0, 0, n-1, 0, 6);
 	return 0;
 }
