@@ -17,11 +17,9 @@ The problems are divided into topics below.</p>
 <li><a target="_blank" href="/Dynamic Programming/edit distance.cpp">Edit Distance Problem</a></li>
 <li><a target="_blank" href="/Dynamic Programming/egg dropping problem.cpp">Egg Dropping Problem</a></li>
 <li><a target="_blank" href="/Dynamic Programming/knapsack.(0 or 1).cpp">Knapsack</a></li>
-<li><a target="_blank" href="/Dynamic Programming/largest area rectangle in histogram.cpp">Largest Rectangle in a Histogram</a></li>
 <li><a target="_blank" href="/Dynamic Programming/largest sum contiguous sub array.cpp">Kadane's Algorithm</a></li>
 <li><a target="_blank" href="/Dynamic Programming/longest common substring.cpp">Longest Common Substring</a></li>
 <li><a target="_blank" href="/Dynamic Programming/longest common susequence.cpp">Longest Common Subsequence</a></li>
-<li><a target="_blank" href="/Dynamic Programming/longest increasing subsequence(nlgn).cpp">Longest Increasing Subsequence(NlgN)</a></li>
 <li><a target="_blank" href="/Dynamic Programming/longest increasing subsequence.cpp">Longest Increasing Subsequence</a></li>
 <li><a target="_blank" href="/Dynamic Programming/longest increasing sum subsequence.cpp">Longest Increasing Sum Subsequence</a></li>
 <li><a target="_blank" href="/Dynamic Programming/longest palindromic subsequence.cpp">Longest Palindromic Subsequence</a></li>
@@ -40,6 +38,12 @@ The problems are divided into topics below.</p>
 <li><a target="_blank" href="/Graph Algorithms/Dijskstra using heaps (STL).cpp">Dijkstra's Algorithm</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Kruskal MST using Union Find.cpp">Kruskal-Minimum Spanning Tree</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Prims Algorithm.cpp">Prim's-Minimum Spanning Tree</a></li>
+</ol>
+<br>
+<h3>Searching</h3>
+<ol>
+	<li><a href="/Search/bfs.cpp">Breadth First Search</a></li>
+	<li><a href="/Search/dfs.cpp">Depth First Search</a></li>
 </ol>
 </body>
 </html>
