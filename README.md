@@ -13,7 +13,7 @@ The problems are divided into topics below.</p>
 <ol>
 <li><a href="/Dynamic Programming/Box Stacking Problem.cpp">Box Stacking Problem</a></li>
 <li><a href="/Dynamic Programming/coin changing problem - no of ways to get a given sum.cpp">Coin Changing Problem</a></li>
-<li><a href="/Dynamic Programming/coin changing problem.cpp>Coin Changing Problem - 2</a></li>
+<li><a href="/Dynamic Programming/coin changing problem.cpp">Coin Changing Problem - 2</a></li>
 <li><a href="/Dynamic Programming/cutting rod to maximize profit.cpp">Rod Cutting Problem</a></li>
 <li><a href="/Dynamic Programming/edit distance.cpp">Edit Distance Problem</a></li>
 <li><a href="/Dynamic Programming/egg dropping problem.cpp">Egg Dropping Problem</a></li>
