@@ -2,12 +2,11 @@
 <head>
 </head>
 <body>
-<h1>Algorithms Library</h1>
+<h1>Algorithms and Data Structures Library</h1>
 <br>
 <h2>Description</h2>
 <p>This repository contains basic and advanced Algorithms and Data Structures in C++ which can be used for reference. 
-The problems are divided into topics below.</p>
-<h2>Topics</h2>
+<h2>Algorithm - Topics</h2>
 <h3>Dynamic Programming</h3>
 <ol>
 <li><a target="_blank" href="/Dynamic Programming/Box Stacking Problem.cpp">Box Stacking Problem</a></li>
@@ -44,6 +43,23 @@ The problems are divided into topics below.</p>
 <ol>
 	<li><a href="/Search/bfs.cpp">Breadth First Search</a></li>
 	<li><a href="/Search/dfs.cpp">Depth First Search</a></li>
+</ol>
+<h3>Sorting</h3>
+<ol>
+	<li><a href="/Sorting/bubble sort.cpp">Bubble Sort</a></li>
+	<li><a href="/Sorting/heap sort.cpp">Heap Sort</a></li>
+	<li><a href="/Sorting/mergesort.cpp">Merge Sort</a></li>
+	<li><a href="/Sorting/quicksort.cpp">Quick Sort</a></li>
+</ol>
+<h3>String</h3>
+<ol>
+	<li><a href="/String/kmp.cpp">KMP Algorithm</a></li>
+</ol>
+<br><br>
+<h2>Data Structures</h2>
+<ol>
+	<li><a href="/Data Structures/segment tree.cpp">Segment Tree</a></li>
+	<li><a href="/Data Structures/trie.cpp">Trie Data Structures</a></li>
 </ol>
 </body>
 </html>
