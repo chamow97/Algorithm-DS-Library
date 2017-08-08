@@ -37,6 +37,7 @@
 <li><a target="_blank" href="/Graph Algorithms/Dijskstra using heaps (STL).cpp">Dijkstra's Algorithm</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Kruskal MST using Union Find.cpp">Kruskal-Minimum Spanning Tree</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Prims Algorithm.cpp">Prim's-Minimum Spanning Tree</a></li>
+<li><a target="_blank" href="/Graph Algorithms/kosaraju double pass algorithm.cpp">Kosaraju Double Pass Algorithm - Strongly Connected Components</a></li>
 </ol>
 <br>
 <h3>Searching</h3>
