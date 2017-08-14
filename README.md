@@ -27,6 +27,7 @@
 <li><a target="_blank" href="/Dynamic Programming/optimal strategy for a game.cpp">Optimal Strategy for a Game</a></li>
 <li><a target="_blank" href="/Dynamic Programming/sequence alignment.cpp">Sequence Alignment</a></li>
 <li><a target="_blank" href="/Dynamic Programming/subset sum problem.cpp">Subset Sum Problem</a></li>
+<li><a target="_blank" href="/Dynamic Programming/stock buy sell.cpp">Buy - sell stock to maximise profit on k transactions</a></li>
 </ol>
 <br>
 <h3>Graph</h3>
