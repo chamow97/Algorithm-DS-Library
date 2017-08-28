@@ -2,9 +2,11 @@
 using namespace std;
 int main()
 {
-    int i,n;
-    int arr[100];
+    int i, n;
     cin>>n;
+    vector<int> arr(n,0);
+    assert(n > 0);
+    assert(n <= 1e6);
     for(i=0;i<n;i++)
     {
         cin>>arr[i];
