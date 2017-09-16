@@ -1,23 +1,38 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int i, n;
-    cin>>n;
-    vector<int> arr(n,0);
-    assert(n > 0);
-    assert(n <= 1e6);
-    for(i=0;i<n;i++)
-    {
-        cin>>arr[i];
-    }
-    int maxSoFar=arr[0];
-    int maxEnding=arr[0];
-    for(i=1;i<n;i++)
-    {
 
-        maxEnding = max(arr[i],arr[i]+maxEnding);
-        maxSoFar = max( maxSoFar,maxEnding);
+int kadaneAlgorithm(int n, vector<int> &inputArray)
+{
+    int maxSoFar = -1e5;
+    int maxEndingHere = 0;
+    for(int i = 0; i < n; i++)
+    {
+        maxEndingHere = maxEndingHere + inputArray[i];
+        if(maxSoFar < maxEndingHere)
+        {
+            maxSoFar = maxEndingHere;
+        }
+        if(maxEndingHere < 0)
+        {
+            maxEndingHere = 0;
+        }
     }
-    cout<<maxSoFar;
+    return maxSoFar;
+}
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        vector<int> inputArray(n,0);
+        for(int i = 0; i < n; i++)
+        {
+            cin>>inputArray[i];
+        }
+        cout<<kadaneAlgorithm(n, inputArray)<<'\n';
+    }
+    return 0;
 }
