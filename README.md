@@ -1,7 +1,4 @@
-<html>
-<head>
-</head>
-<body>
+<center>
 <h1>Algorithms and Data Structures Library</h1>
 <br>
 <h2>Description</h2>
@@ -64,5 +61,5 @@
 	<li><a href="/Data Structures/trie.cpp">Trie Data Structures</a></li>
 	<li><a href="/Data Structures/Segment Tree with lazy propagation.cpp">Segment Tree with lazy propagation</a></li>
 </ol>
-</body>
-</html>
+</p>
+</center>
