@@ -2,50 +2,59 @@ using System.IO;
 using System.Collections.Generic;
 using System;
 
-public class DepthFirstSearch
+class BreadthFirstSearch
 {
     private static int numberOfNodes;
     private static int numberOfEdges;
     private static List<Int32>[] adjacencyList;
-    private static bool[] isVisited; 
+    private static bool[] isVisited;
 
     public static void GetInput()
     {
         numberOfNodes = Convert.ToInt32(Console.ReadLine());
-        
-        adjacencyList = new List<Int32>[numberOfNodes + 1];
-        //instantiation
+        numberOfEdges = Convert.ToInt32(Console.ReadLine());
+
+        //initialisation and instantiation
+        adjacencyList = new List<int>[numberOfNodes + 1];
+        isVisited = new bool[numberOfNodes + 1];
+
         for(int it = 0; it <= numberOfNodes; it++)
         {
-            adjacencyList[it] = new List<Int32>();
+            adjacencyList[it] = new List<int>();
         }
-        isVisited = new bool[numberOfNodes + 1];
+
         for(int it = 0; it <= numberOfNodes; it++)
         {
             isVisited[it] = false;
         }
 
-        numberOfEdges = Convert.ToInt32(Console.ReadLine());
         for(int it = 0; it < numberOfEdges; it++)
         {
             int from, to;
-            //undirected
             from = Convert.ToInt32(Console.ReadLine());
             to = Convert.ToInt32(Console.ReadLine());
+            //undirected
             adjacencyList[from].Add(to);
             adjacencyList[to].Add(from);
         }
     }
 
-    public static void DFS(int startVertex)
+    public static void BFS(int startVertex)
     {
-        Console.Write(startVertex + " ");
+        Queue<int> nodeQueue = new Queue<int>();
+        nodeQueue.Enqueue(startVertex);
         isVisited[startVertex] = true;
-        for(int it = 0; it < adjacencyList[startVertex].Count; it++)
+        while(nodeQueue.Count != 0)
         {
-            if(!isVisited[adjacencyList[startVertex][it]])
+            int frontNode = Convert.ToInt32(nodeQueue.Dequeue());
+            Console.Write(frontNode + " ");
+            for(int it = 0; it < adjacencyList[frontNode].Count; it++)
             {
-                DFS(adjacencyList[startVertex][it]);
+                if(!isVisited[adjacencyList[frontNode][it]])
+                {
+                    nodeQueue.Enqueue(adjacencyList[frontNode][it]);
+                    isVisited[adjacencyList[frontNode][it]] = true;
+                }
             }
         }
     }
@@ -57,8 +66,8 @@ public class DepthFirstSearch
         {
             if(!isVisited[it])
             {
-                Console.Write("Start from " + it + ": ");
-                DFS(it);
+                Console.Write("Starting from " + it + ": ");
+                BFS(it);
                 Console.WriteLine();
             }
         }
