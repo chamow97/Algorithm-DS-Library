@@ -5,7 +5,7 @@ using System;
 public class BubbleSort
 {
 	private static int numberOfElements;
-	public static List<int> elementList = new List<int>();
+	private static List<int> elementList = new List<int>();
 
 	BubbleSort()
 	{
