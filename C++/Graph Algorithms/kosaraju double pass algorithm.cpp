@@ -103,8 +103,6 @@ int main()
             dfs(adj, visited, i);
         }
     }
-    
-    cout<<'\n';
     boolean visited_again(n, false);
     kosaraju(revadj, n);
 	return 0;
