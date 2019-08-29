@@ -33,6 +33,7 @@
 <li><a target="_blank" href="/Graph Algorithms/Checking cycles in a graph.cpp">Checking cycles in a Graph</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Dijkstras using Adjaceny Matrix(without heap).cpp">Dijkstra's(without priority queue)</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Dijskstra using heaps (STL).cpp">Dijkstra's Algorithm</a></li>
+<li><a target="_blank" href="/Graph Algorithms/Lowest-Common-Ancestor.cpp">Lowest Common Ancestor</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Kruskal MST using Union Find.cpp">Kruskal-Minimum Spanning Tree</a></li>
 <li><a target="_blank" href="/Graph Algorithms/Prims Algorithm.cpp">Prim's-Minimum Spanning Tree</a></li>
 <li><a target="_blank" href="/Graph Algorithms/kosaraju double pass algorithm.cpp">Kosaraju Double Pass Algorithm - Strongly Connected Components</a></li>
@@ -57,9 +58,12 @@
 <br><br>
 <h2>Data Structures</h2>
 <ol>
+	<li><a href="/Data Structures/Fenwick_Tree.cpp">Fenwick Tree</a></li>
 	<li><a href="/Data Structures/segment tree.cpp">Segment Tree</a></li>
-	<li><a href="/Data Structures/trie.cpp">Trie Data Structures</a></li>
 	<li><a href="/Data Structures/Segment Tree with lazy propagation.cpp">Segment Tree with lazy propagation</a></li>
+	<li><a href="/Data Structures/SparseTableRangeMinimumQuery.cpp">Sparse Table - Range Minimum Query</a></li>
+	<li><a href="/Data Structures/trie.cpp">Trie Data Structures</a></li>
+
 </ol>
 </p>
 </center>
