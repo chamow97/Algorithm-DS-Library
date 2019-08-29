@@ -63,7 +63,6 @@
 	<li><a href="C++/Data Structures/Segment Tree with lazy propagation.cpp">Segment Tree with lazy propagation</a></li>
 	<li><a href="C++/Data Structures/SparseTableRangeMinimumQuery.cpp">Sparse Table - Range Minimum Query</a></li>
 	<li><a href="C++/Data Structures/trie.cpp">Trie Data Structures</a></li>
-
 </ol>
 </p>
 </center>
